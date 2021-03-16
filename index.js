@@ -295,8 +295,9 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(sentence) {
+function vowelCounter(string) {
     let count = 0
+    let sentence = string.toLowerCase()
     for (let i = 0; i < sentence.length; i++) {
       if (sentence[i] === "a" || sentence[i] === "e" || sentence[i] === "i" || sentence[i] === "o" || sentence[i] === "u") {
         count++
@@ -306,7 +307,7 @@ function vowelCounter(sentence) {
     return count;
 }
 
-
+vowelCounter("This is a test")
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
